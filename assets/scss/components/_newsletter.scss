@@ -1,0 +1,62 @@
+@use '../helpers/variables' as *;
+
+//*NEWS LETTER
+#newsletter {
+    text-align: center;
+  
+    .newsContent {
+      max-width: 600px;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        font-family: $day-one;
+      }
+  
+      p {
+        font-size: 1rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+        font-family: $roboto;
+      }
+  
+      form {
+        margin-top: 20px;
+  
+        input[type="email"] {
+          padding: 10px;
+          width: 80%;
+          margin-bottom: 10px;
+          border: 1px solid #ced4da;
+          border-radius: 5px;
+        }
+  
+        button[type="submit"] {
+          padding: 10px 20px;
+          background-color: $bg-color;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: $secondary-color;
+            color: $bg-color;
+          }
+        }
+      }
+  
+      .error-msg {
+        color: #dc3545;
+        margin-top: 5px;
+      }
+    }
+  }

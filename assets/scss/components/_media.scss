@@ -1,0 +1,67 @@
+//*SECTION MEDIA
+  #media {
+    .container {
+      height: 100%;
+      width: 100%;
+      padding: 1rem 0;
+      display: grid;
+      place-content: center;
+      
+      .cards {    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        pointer-events: none;
+      }
+      
+      .card {
+        max-width: 10rem;
+        color: #ffffffda;
+        padding: 1.5rem;
+        background-color: #202022;
+        pointer-events: auto;
+        transform: scale(1);
+        opacity: 1;
+        transition: all 150ms ease-in-out; 
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          margin-bottom: 1rem;
+        }
+        
+        .card-title {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
+        
+        .date {
+          color: #bb86fc;
+          font-size: 0.85rem;
+          margin-bottom: 1rem;
+        }
+      }
+      
+      .card:nth-child(even) {
+        transform: translateY(8px);
+      }
+      
+      .card:nth-child(n) {
+        transform: rotate(-5deg);
+      }
+    }
+  }
+  
+  #media .cards:hover > .card:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+  
+  #media .cards:hover > .card:not(:hover) {
+    opacity: 0.5;
+  }

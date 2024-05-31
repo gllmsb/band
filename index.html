@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vaccines</title>
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+  <!-- HEADER -->
+    <header class="custom-header">
+        <h1 onclick="scrollToHome()">The Vaccines</h1>
+        <button onclick="toggleDropdown()" class="w3-button w3-black">☰</button>
+        <div id="customDropdown" class="custom-dropdown-content w3-animate-fall">
+            <a href="#tour" class="w3-bar-item w3-button">Tour</a>
+            <a href="#band" class="w3-bar-item w3-button">Band</a>
+            <a href="#media" class="w3-bar-item w3-button">Albums</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </header>
+    <!-- SECTION TOUR -->
+    <section id="tour">
+      <img src="assets/images/vaccines album pickup.jpg" alt="band">
+    </section>
+
+    <!-- SECTION PINKCARNAGE -->
+    <section id="pinkcarnage">
+      <img src="assets/images/vaccines-tour.png" alt="tour poster">
+      <button class="button-28" role="button">UK + EU Tour on sale now</button>
+    </section>
+
+    <!-- SECTION BAND -->
+    <section id="band">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="assets/images/vaccines 1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="assets/images/vaccines drummer.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="assets/images/vaccines 3.jpg" style="width:100%">
+        </div>
+        
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+
+        <div class="band-description">
+          <h2>About The Vaccines</h2>
+          <p>The Vaccines are a British indie rock band formed in West London in 2010. Known for their energetic and catchy guitar-driven sound, they quickly gained attention with their debut album "What Did You Expect from The Vaccines?" released in 2011. The band consists of Justin Hayward-Young (vocals, guitar), Freddie Cowan (guitar, vocals), Árni Árnason (bass, vocals), and Yoann Intonti (drums, percussion). With a style influenced by post-punk revival and garage rock, The Vaccines have been recognized for their infectious hooks, dynamic performances, and witty lyricism.</p>
+        </div>
+        <br>
+    </section>
+
+    <!-- SECTION MEDIA -->
+    <section id="media">
+      <div class="container">
+        <div class="cards">
+          <div class="card card-one">
+            <img src="assets/images/combat sports 1st.jpg" alt="Album One">
+            <h2 class="card-title">Combat Sports</h2>
+            <p class="date">Release Date: January 1, 2024</p>
+          </div>
+          
+          <div class="card card-two">
+            <img src="assets/images/come of age 2nd.jpg" alt="Album Two">
+            <h2 class="card-title">Come Of Age</h2>
+            <p class="date">Release Date: February 1, 2024</p>
+          </div>
+          
+          <div class="card card-three">
+            <img src="assets/images/english graffiti 3rd.jpg" alt="Album Three">
+            <h2 class="card-title">English Graffiti</h2>
+            <p class="date">Release Date: March 1, 2024</p>
+          </div>
+          
+          <div class="card card-four">
+            <img src="assets/images/what did u expect 4th.jpg" alt="Album Four">
+            <h2 class="card-title">What Did You Expect</h2>
+            <p class="date">Release Date: April 1, 2024</p>
+          </div>
+        </div>
+      </div>
+    
+    <!-- SECTION NEWSLETTER -->
+    <section id="newsletter">
+      <div class="newsContent">
+      <h2>Join Our Newsletter</h2>
+      <p>Subscribe to our newsletter to receive the latest news and exclusive offers every week. No spam.</p>
+      <form id="newsletterForm">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <button type="submit" id="subscribeBtn">Subscribe</button>
+      </form>
+      <p id="emailError" class="error-msg"></p>
+
+    <!-- DIALOG -->
+      <div id="dialog" class="dialog">
+      <div class="dialog-content">
+        <span id="closeDialog" class="close">&times;</span>
+          <p>Thank you for subscribing to our newsletter!</p>
+      </div>
+      </div>
+      </div>
+      </section>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <div class="footer-left">
+        <div class="social-icons">
+          <a href="#"><img src="assets/images/facebook_1384005.png" alt="Facebook"></a>
+          <a href="#"><img src="assets/images/instagram_1384015.png" alt="Instagram"></a>
+          <a href="#"><img src="assets/images/tiktok_3116491.png" alt="TikTok"></a>
+          <a href="#"><img src="assets/images/twitter_1384017.png" alt="Twitter"></a>
+        </div>
+        <p>©2024 The Vaccines. All Rights Reserved. Website powered by DJL Web Solutions for Townsend Music</p>
+      </div>
+      
+      
+      <div class="footer-right">
+        <div class="contact-support">
+          <h3>Contact Support</h3>
+          <button>Contact Us</button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

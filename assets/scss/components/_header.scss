@@ -1,0 +1,67 @@
+@use '../helpers/variables' as *;
+
+//*HEADER
+.custom-header {
+    background-color: $bg-color;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+        color: $primary-color;
+        font-family: $day-one;
+    }
+
+    .w3-button {
+        color: $font-color;
+        background-color: $bg-color;
+        font-size: 1.3rem;
+    }
+
+    .custom-dropdown-content {
+        display: none;
+        position: absolute;
+        bottom: -180px; 
+        left: 0;
+        background-color: $bg-color;
+        min-width: 160px;
+        width: 100%;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: $font-color;
+            font-family: $roboto;
+
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+
+    &.custom-show {
+        display: block !important;
+    }
+}
+
+//*ANIMATION
+@keyframes fall-in {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.w3-animate-fall {
+    animation: fall-in 0.6s;
+}
